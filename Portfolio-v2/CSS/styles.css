@@ -1,0 +1,23 @@
+body {
+  background-color: #222831;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.middle-box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.bottom-box{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}
+.highlight {
+  text-decoration: underline;
+}
