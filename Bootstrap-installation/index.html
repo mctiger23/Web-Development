@@ -48,10 +48,17 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light my-2 my-sm-0 bg-primary" type="submit">Search</button>
       </form>
-      <div class="d-flex justify-content-end">
-        <button type="button" class="btn btn-primary ">
+      <div class="btn-group d-flex justify-content-end">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           MC - Profile <span class="badge badge-light">4</span>
         </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Notifications <span class="badge-light justify-content-end">4</span></a>
+            <a class="dropdown-item" href="#">Schedule Change</a>
+            <a class="dropdown-item" href="#">Certification Request</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Settings</a>
+        </div>
       </div>
     </div>
   </nav>
