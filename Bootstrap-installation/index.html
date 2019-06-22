@@ -74,14 +74,39 @@
       </ol>
     </nav>
   </div> -->
-  <div class="row px-1 d-flex">
+  <div class="row mx-1 d-flex">
     <div class="col-lg-4 col-sm-4 d-flex m-auto justify-content-center font-weight-bold text-primary">
       <h5>REQ 6201910123</h5>
     </div>
-    <div class="col-lg-4 col-md-4 order-lg-last d-flex justify-content-end">
-      <button type="button" name="EditRequest" class="btn btn-outline-light bg-primary"" type=" button">Edit</button>
-      <button type="button" name="EditRequest" class="btn btn-outline-light bg-primary"" type=" button">Print</button>
+    <div class="col-lg-4 col-md-4 px-0 order-lg-last d-flex justify-content-end">
+      <button type="button" class="btn btn-outline-light bg-primary " data-toggle="modal" data-target="#EditRequest">Edit</button>
+      <button type="button" class="btn btn-outline-light bg-primary d-none d-md-block" type=" button">Print</button>
     </div>
+
+    <div class="modal fade" id="EditRequest" tabindex="-1" role="dialog" aria-labelledby="EditTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="EditTitle">Edit Request</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" id="EditTextField" rows="5"></textarea>
+                </div>
+              </form>  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <ul class="col-sm-12 col-lg-4 order-lg-first nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="Instructions-tab" data-toggle="tab" href="#Instructions" role="tab" aria-controls="Intructions" aria-selected="true">Instructions</a>
@@ -95,25 +120,27 @@
     </ul>
   </div>
   <hr class="m-0">
-  <div class="tab-content p-2" id="myTabContent">
-    <div class="tab-pane fade show active overflow-auto" id="Instructions" role="tabpanel" aria-labelledby="Instructions-tab">
-      <strong>Build Instructions:</strong> Allows techs to easily navigate through the build instructions. <br>
-      <strong>Asset Template:</strong> AT_CustomerName_Size_STD_REQ <br>
-      <strong>Other Instructions:</strong><br>
-      <strong>QC Notes:</strong>
+  <div class="container-fluid overflow-auto">
+    <div class="tab-content p-2" id="myTabContent">
+      <div class="tab-pane fade show active overflow-auto" id="Instructions" role="tabpanel" aria-labelledby="Instructions-tab">
+        <strong>Build Instructions:</strong> Allows techs to easily navigate through the build instructions. <br>
+        <strong>Asset Template:</strong> AT_CustomerName_Size_STD_REQ <br>
+        <strong>Other Instructions:</strong><br>
+        <strong>QC Notes:</strong>
+      </div>
+      <div class="tab-pane fade p-2 overflow-auto" id="HD-Notes" role="tabpanel" aria-labelledby="HD-Notes-tab">List all instructions before releasing the orders. This section will also include EDCs that will be required for this specific build/REQ</div>
+      <div class="tab-pane fade p-2 overflow-auto" id="Others" role="tabpanel" aria-labelledby="Others-tab">Additional tab will be available for other purposes <br>
+        example: <br>
+        <ul>
+          <li>Log Changes</li>
+          <li>Other Documents</li>
+          <li>Placement Photos</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
     </div>
-    <div class="tab-pane fade p-2 overflow-auto" id="HD-Notes" role="tabpanel" aria-labelledby="HD-Notes-tab">List all instructions before releasing the orders. This section will also include EDCs that will be required for this specific build/REQ</div>
-    <div class="tab-pane fade p-2 overflow-auto" id="Others" role="tabpanel" aria-labelledby="Others-tab">Additional tab will be available for other purposes <br>
-      example: <br>
-      <ul>
-        <li>Log Changes</li>
-        <li>Other Documents</li>
-        <li>Placement Photos</li>
-        <li>Contacts</li>
-      </ul>
-    </div>
-  </div>
-  <div class="container-fluid">
+</div>
+  <div class="container-fluid ">
     <div class="row">
       <div class="border-top border-left col-lg-4">
         <h6>Attached Documents</h6>
@@ -132,13 +159,10 @@
         </p>
       </div>
     </div>
-
   </div>
-
-
-<footer class="fixed-bottom pb-1 text-center text-light bg-primary">
-  ©️ 2019 Designed By Miguel Castro
-</footer>
+  <footer class="fixed-bottom pb-1 text-center text-light bg-primary">
+    ©️ 2019 Designed By Miguel Castro
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
