@@ -1,0 +1,154 @@
+body {
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  background-color: #222831;
+  margin: 0;
+}
+h1 {
+font-family: 'Dancing Script', cursive;
+font-size: 5.625rem;
+}
+h2{
+  font-size: 2.5rem;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: normal;
+  padding: 10px;
+}
+h3 {
+  color: #dd6b4d;
+}
+hr {
+  border-style: dotted none none;
+  width: 3%;
+  border-color: #4592af;
+  border-width: 10px;
+  margin: 50px  auto;
+}
+p {
+  line-height: 2;
+}
+a:hover {
+  color: #dae1e7;
+}
+
+.form-text {
+  text-align: left;
+}
+.Name-Title {
+  background-color:#1c4b82;
+}
+.intro {
+  width: 30%;
+  margin: 20px auto;
+}
+.highlight {
+  text-decoration: underline;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.top-cloud {
+  position: absolute;
+  right: 250px;
+  top: 40px;
+}
+.skill-row {
+  width: 50%;
+  margin: 50px auto;
+  line-height: 2;
+}
+.job-Experience {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+.icon {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+.certification-row {
+  width: 50%;
+  margin: 50px auto;
+  line-height: 2;
+}
+.Education {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+.cert {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+.certification-list {
+  width: 50%;
+  margin: auto;
+}
+.cert-table {
+  text-align: left;
+  margin: auto;
+  line-height: 2;
+}
+#compIcon {
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+#photo_profile {
+  border-radius: 50%;
+  margin: 10px auto;
+  height: 20%;
+  width: 10%;
+}
+.Job_Year {
+  color: #1c4b82;
+
+}
+
+.bottom-container{
+  background-color: #1c4b82;
+
+}
+.contact-me {
+  margin: 30px auto;
+}
+.footer-link {
+  color: #dd6b4d;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Roboto Slab', serif;
+  color: #dae1e7;
+  font-size: 20px;
+  background: #1c4b82;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

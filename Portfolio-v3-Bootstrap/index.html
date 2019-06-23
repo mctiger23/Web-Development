@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto+Slab|Source+Code+Pro|Staatliches&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Miguel Castro</title>
+</head>
+
+<body>
+  <!-- Title -->
+  <div class="container-fluid p-2 Name-Title">
+    <div class="row pt-5">
+      <div class="col-3 col-md-4 mr-0 align-self-start">
+        <img class="" src="images/cloud.png" alt="cloud-img">
+      </div>
+
+      <h1 class="col-12 align-items-center">I'm Miguel,</h1>
+      <h2 class="col-12">An inspiring <span class="highlight">Web Developer</span></h2>
+
+      <div class="col-3 col-md-4 ml-auto d-flex align-self-end justify-content-center">
+        <img class="" src="images/cloud.png" alt="cloud-img">
+      </div>
+    </div>
+    <img class="pb-5" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <!--profile Pic + Brief intro summary about me -->
+  <div class="container-fluid">
+    <img id="photo_profile" src="images/profile2.png" alt="myPhoto">
+    <h2>Hello.</h2>
+    <p>Self-taught Web Developer. I always challenge myself to learn and become a better Developer. I beleive there is no such thing as a perfect program or site and there is always room for improvement.</p>
+    <br>Currently in the process of further improving my frontend development skills. Once I have a good grassep with the frontend development, I will be moving forward on learning more about the backend development.
+    <hr>
+  </div>
+
+
+  <!-- My Skills and Experiences -->
+  <div class="skills">
+    <h2>My Skills And Experiences.</h2>
+    <div class="skill-row">
+      <img id="compIcon" src="images/computer.png" alt="computer">
+      <h3>My IT Job Experiences</h3>
+      <ul class="job-Experience">
+        <li><span class="Job_Year">2017 - Present </span> Systems Administrator</li>
+        <li><span class="Job_Year">2015 - 2017 </span> Level II Technician</li>
+        <li><span class="Job_Year">2014 - 2015 </span> Installer/ Level I Technician</li>
+      </ul>
+    </div>
+    <div class="certification-row">
+      <img class="cert" src="images/certification.png" alt="cert" height="200px" width="200px">
+      <h3>My Education</h3>
+      <div class="Education">
+        <ul>
+          <li>Western Governors Unitversity Bachelors of Science in Information Technology</li>
+          <li>Collage of Lake County Associates in Applied Science and Applied Art</li>
+        </ul>
+      </div>
+    </div>
+    <div class="certification-list">
+      <h3>My Certifications</h3>
+      <table class="cert-table">
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>CompTIA A+</li>
+                    <li>CompTIA Net+</li>
+                    <li>CompTIA Security+</li>
+                    <li>CompTIA Project+</li>
+                    <li>CompTIA Cloud Essentials</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>LPI Linux Essentials</li>
+                    <li>CIW Site Development Associate</li>
+                    <li>CIW Advanced HTML5 and CSS3 Specialist</li>
+                    <li>CIW User Interface Design</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <!-- Conact -->
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <p>Feel free to contact me if you have any questions.</p>
+    <button type="button" class="btn" data-toggle="modal" data-target="#email-me">CONTACT ME</button>
+    <div class="modal fade text-dark" id="email-me" tabindex="-1" role="dialog" aria-labelledby="EmailMe-Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="#EmailMe-Label">Leave a Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name " class="col-form-label form-text">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label form-text">Message:</label>
+                  <textarea class="form-control" id="message-text" rows="5"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <p class="m-0">© 2019 Miguel Castro.</p>
+  </div>
+
+</body>
+
+</html>
