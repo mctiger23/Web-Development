@@ -74,16 +74,34 @@
       </ol>
     </nav>
   </div> -->
-  <div class="row mx-1 d-flex">
-    <div class="col-lg-4 col-sm-4 d-flex m-auto justify-content-center font-weight-bold text-primary">
-      <h5>REQ 6201910123</h5>
+  <div class="container-fluid">
+    <div class="row my-3 text-center">
+      <div class="col my-auto font-weight-bold text-dark">
+        <h4 class="font-weight-bold">REQ 6201910123</h4>
+      </div>
     </div>
-    <div class="col-lg-4 col-md-4 px-0 order-lg-last d-flex justify-content-end">
-      <button type="button" class="btn btn-outline-light bg-primary " data-toggle="modal" data-target="#EditRequest">Edit</button>
-      <button type="button" class="btn btn-outline-light bg-primary d-none d-md-block" type=" button">Print</button>
-    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="Instructions-tab" data-toggle="tab" href="#Instructions" role="tab" aria-controls="Intructions" aria-selected="true">Instructions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="HD-Notes-tab" data-toggle="tab" href="#HD-Notes" role="tab" aria-controls="HD-Notes" aria-selected="false">Help Desk Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Others-tab" data-toggle="tab" href="#Others" role="tab" aria-controls="Others" aria-selected="false">Others</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 px-0 align-self-end d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-light bg-primary " data-toggle="modal" data-target="#EditRequest">Edit</button>
+        <button type="button" class="btn btn-outline-light bg-primary d-none d-md-block" type=" button">Print</button>
+      </div>
 
-    <div class="modal fade" id="EditRequest" tabindex="-1" role="dialog" aria-labelledby="EditTitle" aria-hidden="true">
+      <div class="modal fade" id="EditRequest" tabindex="-1" role="dialog" aria-labelledby="EditTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -91,7 +109,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-          </div>
+            </div>
             <div class="modal-body">
               <form>
                 <div class="form-group">
@@ -106,18 +124,7 @@
           </div>
         </div>
       </div>
-
-    <ul class="col-sm-12 col-lg-4 order-lg-first nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="Instructions-tab" data-toggle="tab" href="#Instructions" role="tab" aria-controls="Intructions" aria-selected="true">Instructions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="HD-Notes-tab" data-toggle="tab" href="#HD-Notes" role="tab" aria-controls="HD-Notes" aria-selected="false">Help Desk Notes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="Others-tab" data-toggle="tab" href="#Others" role="tab" aria-controls="Others" aria-selected="false">Others</a>
-      </li>
-    </ul>
+    </div>
   </div>
   <hr class="m-0">
   <div class="container-fluid overflow-auto">
@@ -128,7 +135,8 @@
         <strong>Other Instructions:</strong><br>
         <strong>QC Notes:</strong>
       </div>
-      <div class="tab-pane fade p-2 overflow-auto" id="HD-Notes" role="tabpanel" aria-labelledby="HD-Notes-tab">List all instructions before releasing the orders. This section will also include EDCs that will be required for this specific build/REQ</div>
+      <div class="tab-pane fade p-2 overflow-auto" id="HD-Notes" role="tabpanel" aria-labelledby="HD-Notes-tab">List all instructions before releasing the orders. This section will also include EDCs that will be required for this specific build/REQ
+      </div>
       <div class="tab-pane fade p-2 overflow-auto" id="Others" role="tabpanel" aria-labelledby="Others-tab">Additional tab will be available for other purposes <br>
         example: <br>
         <ul>
@@ -139,26 +147,69 @@
         </ul>
       </div>
     </div>
-</div>
-  <div class="container-fluid ">
+  </div>
+  <hr class="mt-2">
+  <div class="container-fluid pt-2">
     <div class="row">
-      <div class="border-top border-left col-lg-4">
-        <h6>Attached Documents</h6>
+      <div class="col-lg-4 my-3">
+        <div class="card">
+          <div class="card-header">
+            <h6>Attached Documents</h6>
+          </div>
+          <div class="card-body">
+            Attached Documents and Photos here -- Hover:Small Description
+          </div>
+          <div class="card-footer">
+            Add Documents [Plus button]
+          </div>
+        </div>
       </div>
-      <div class="border-top border-left col-lg-4">
-        <h6>EDCs</h6>
-        <ul>
-          <li>EDC <strong>500815</strong></li>
-        </ul>
+      <div class="col-lg-4 my-3">
+        <div class="card">
+          <div class="card-header">
+            <h6>EDCs</h6>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>EDC <strong>500815</strong></li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            Add EDCs [Plus button]
+          </div>
+        </div>
       </div>
-      <div class="border-top border-left col-lg-4">
-        <h6>Reference REQs</h6>
-        <p>
-          Imaging: <a href="#">REQ#20191234</a><br>
-          Kitting: <a href="#">REQ#20194321</a><br>
-        </p>
+      <div class="col-lg-4 my-3">
+        <div class="card">
+          <div class="card-header">
+            <h6>Reference REQs</h6>
+          </div>
+          <div class="card-body">
+            <p>
+              Imaging: <a href="#">REQ#20191234</a><br>
+              Kitting: <a href="#">REQ#20194321</a><br>
+            </p>
+          </div>
+          <div class="card-footer">
+            Add Refernce REQ#s [Plus button]
+          </div>
+      </div>
       </div>
     </div>
+  </div>
+    <!-- <div class="row"> Using Row
+      <div class="border-top border-left col-lg-4">
+
+      </div>
+      <div class="border-top border-left col-lg-4">
+
+
+      </div>
+      <div class="border-top border-left col-lg-4">
+
+
+      </div>
+    </div> -->
   </div>
   <footer class="fixed-bottom pb-1 text-center text-light bg-primary">
     ©️ 2019 Designed By Miguel Castro
