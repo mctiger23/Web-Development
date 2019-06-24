@@ -4,12 +4,32 @@ body {
 h1 {
   font-family: 'Montserrat';
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.5;
 }
 
+h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+.container-fluid1 {
+  padding: 3% 15% 7%;
+
+}
 .container-fluid {
   padding: 3% 15%;
+
 }
 #title {
   background-color: #ff4c68;
@@ -32,6 +52,7 @@ h1 {
   font-size: 1.2rem;
   font-family: 'Montserrat';
   font-weight:400;
+  color: #8f8f8f;
 }
 
 /* Download Button */
@@ -44,5 +65,87 @@ h1 {
 /* Title Image */
 .title-image {
   width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 
+}
+
+/* feature icons */
+.feature-icons {
+  color: #ef8172;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icons:hover {
+  color: #FF4C68;
+}
+
+/* features */
+#features{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+
+}
+.feature-descp {
+  color: #8f8f8f;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+
+/* CTA */
+
+#cta {
+  background-color: #FF4C68;
+  color: white;
+}
+
+.download-button-foot{
+
+}
+
+/* footer */
+
+#footer {
+  background-color: white;
+}
+.footer-icon {
+  margin: 0 10px 20px 10px;
+}
+/* media query needs to be set at the bottom of the page */
+
+@media (max-width: 1045px) {
+  #title {
+    text-align: center;
+  }
+  #features {
+    position: static;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
