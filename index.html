@@ -1,21 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>My Projects</title>
-  </head>
-  <body>
-    <h1><a href="CC-Prototype/index.html"> CC-Prototype </a></h1>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/custom-theme-bootstrap.css">
+
+  <!-- CSS folder -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>My Projects</title>
+</head>
+
+<body>
+
+  <!-- Top Nav Section -->
+  <div class="container-fluid bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <h3 class="navbar-brand font-weight-bold text-danger" href="#">My Site </h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTopToggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTopToggle">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Project">Projects</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- Welcome / Intro section -->
+  <section id="intro" class="bg-light">
+    <div class="container-fluid bg-light h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-12">
+            <div class="text-center justify-content-center">
+              <h1 class="display-4 font-weight-bold">Welcome!</h1>
+              <p class="lead">My name is Miguel and I am a self-taught Developer.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About me section -->
+  <section id="About" class="bg-dark">
+    <div class="container-fluid ">
+      <h1 class="text-danger font-weight-bold">About Me</h1>
+      <p class="lead text-light py-2">Self-taught Developer. I have been always wanting to learn how to code and create sites and applications . I find it enjoying creating webpages and learning about different development languages and framework.
+      </p>
+      <div class="row mt-3">
+        <div class="col-lg-4 p-3">
+          <h1 class="text-light font-weight-bold py-3">My education</h1>
+          <p class="text-light"><span class="text-secondary font-weight-bold">2016 - 2019 </span>Bachelor of Science Information Technology in Western Governors University</p>
+          <p class="text-light"><span class="text-secondary font-weight-bold">2008 - 2014 </span>Associate of Science and Applied Arts in College of Lake County</p>
+        </div>
+        <div class="col-lg-4 p-3">
+          <div class="Certifications">
+            <h1 class="text-light font-weight-bold py-3">Certifications</h1>
+            <table class="table text-left text-light">
+              <tbody class="row ">
+                <tr class="col ">
+                  <td>
+                    <ul>
+                      <li>CompTIA A+</li>
+                      <li>CompTIA Net+</li>
+                      <li>CompTIA Security+</li>
+                      <li>CompTIA Project+</li>
+                      <li>CompTIA Cloud Essentials</li>
+                    </ul>
+                </tr>
+                <tr class="col">
+                  <td>
+                    <ul>
+                      <li>LPI Linux Essentials</li>
+                      <li>CIW Site Development Associate</li>
+                      <li>CIW Advanced HTML5 and CSS3 Specialist</li>
+                      <li>CIW User Interface Design</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="col-lg-4 p-3">
+          <h1 class="text-light font-weight-bold py-3">My IT Experiences</h1>
+          <p class="text-light"><span class="text-secondary font-weight-bold">2018 - Present </span>Systems Administrator</p>
+          <p class="text-light"><span class="text-secondary font-weight-bold">2016 - 2017 </span>Level II Technician</p>
+          <p class="text-light"><span class="text-secondary font-weight-bold">2015 - 2016 </span>Level I Technician</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- My Projects -->
+  <section id="Projects" class="d-flex vh-100 bg-light">
+    <div class="container-fluid py-5">
+      <h1 class="text-danger font-weight-bold">My Projects</h1>
+      <h3><a class="text-success font-weight-bold" href="CC-Prototype/index.html"> CC-Prototype </a></h3>
+    </div>
+  </section>
+
+  <!-- Contacts Info -->
+  <section id="Contact" class="vh-50">
+    <div class="container-fluid py-5 bg-primary h-100">
+      <h1 class="text-danger font-weight-bold">Contact Me</h1>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section id="footer">
+    <footer class="bg-info h-100 text-danger">
+      <div class="container-fluid pt-2">
+        Footer
+      </div>
+    </footer>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  text-align: center;
+
+}
+
+
+.section-container {
+  /* height: 100vh; */
+}
+
+#intro {
+    padding: 3% 15% 7%;
+    height: 100vh;
+}
+
+#About {
+    padding: 2% 5% 5%;
+}
+#footer {
+  height: 5vh;
+}
