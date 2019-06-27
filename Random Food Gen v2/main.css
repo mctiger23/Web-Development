@@ -1,0 +1,111 @@
+body {
+    color: blanchedalmond;
+    background-image: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?cs=srgb&dl=bread-color-copyspace-1565982.jpg&fm=jpg);
+    background-size: fixed;
+    text-align: center;
+    font: 18px;
+
+}
+
+button {
+    background-color: darkgrey;
+    padding: 1%;
+    border-width: thick;
+    border-style: solid;
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+    text-align: center;
+    text-decoration: none;
+    font-size: 75% ;
+    font-weight: lighter;
+    border-radius: 10px;
+    width: 35%;
+  }
+.resto, .generate {
+  display: inline-block;
+}
+header > h1 {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px;
+}
+
+h2{
+    text-align: center;
+    padding: .5%;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+}
+li {
+  font-size: 18px;
+  list-style-position: inside;
+  border: 1px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+
+button:hover {
+  background-color: black;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 1;
+  height: 25px;
+  width: 25px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.optionSection {
+  text-align: left;
+  padding: 4px;
+  width: 400px;
+  margin: 100px;
+  border-color: white;
+  border-style: solid;
+  position: absolute;
+  align-self: center;
+}
