@@ -4,7 +4,9 @@ body {
 
 }
 
-
+.masterhead-avatar {
+  width: 15rem;
+}
 .section-container {
   /* height: 100vh; */
 }
