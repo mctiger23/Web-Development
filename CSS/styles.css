@@ -22,3 +22,9 @@ body {
 #footer {
   height: 5vh;
 }
+
+.border-1 {
+  border:solid;
+  border-radius: 30px;
+
+}
