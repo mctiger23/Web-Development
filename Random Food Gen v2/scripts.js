@@ -1,5 +1,5 @@
 var restoPlace = ["Portillos","Chick Fil-A", "MODS", "Jasons Deli","Panera","Noodle's and Company", ];
-var listText = ""
+var listText = "";
 // List pre-defined list//
 window.onload = function listOptions(){
     var l;
@@ -7,7 +7,7 @@ window.onload = function listOptions(){
       listText += "<label class='container'>" + restoPlace[l] + "<input type = 'checkbox'>"  +"<span class = 'checkmark'></span>"+ "</label>"+"<br>";
     }
     document.getElementById("options").innerHTML = listText;
-}
+};
 function addResto () {
   var  i;
   var text = "";
@@ -36,4 +36,3 @@ function randomResto (){
     }
     document.getElementById("result").innerHTML = randomNumResto;
 }
-
