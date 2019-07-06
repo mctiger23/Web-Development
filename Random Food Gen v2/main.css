@@ -1,13 +1,48 @@
 body {
     color: blanchedalmond;
-    background-image: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?cs=srgb&dl=bread-color-copyspace-1565982.jpg&fm=jpg);
-    background-size: fixed;
+    background: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?cs=srgb&dl=bread-color-copyspace-1565982.jpg&fm=jpg) no-repeat center center fixed;
+    background-size: cover ;
     text-align: center;
+    line-height: 2rem;
     font: 18px;
 
 }
 
-button {
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+}
+.border-thick{
+  border-style: solid;
+  border-width: medium;
+
+}
+
+.w-400 {
+    width: 30%;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+
+@media (max-width: 800px){
+  h4, h2 {
+    font-size: 1rem;
+  }
+  .w-400{
+    width: 100%;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+
+}
+/* button {
     background-color: darkgrey;
     padding: 1%;
     border-width: thick;
@@ -34,11 +69,7 @@ h2{
     text-align: center;
     padding: .5%;
 }
-footer{
-  position: fixed;
-  bottom: 0;
-  text-align: right;
-}
+
 li {
   font-size: 18px;
   list-style-position: inside;
@@ -53,7 +84,7 @@ button:hover {
 }
 
 .container {
-  display: block;
+  display: ;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -108,4 +139,4 @@ button:hover {
   border-style: solid;
   position: absolute;
   align-self: center;
-}
+} */

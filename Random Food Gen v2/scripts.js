@@ -4,7 +4,7 @@ var listText = "";
 window.onload = function listOptions(){
     var l;
     for (l =0; l < restoPlace.length; l++) {
-      listText += "<label class='container'>" + restoPlace[l] + "<input type = 'checkbox'>"  +"<span class = 'checkmark'></span>"+ "</label>"+"<br>";
+      listText += "<h4 class='p-1 d-inline-block'>" + restoPlace[l] +"</h4>" +"<br>";
     }
     document.getElementById("options").innerHTML = listText;
 };
@@ -19,6 +19,7 @@ function addResto () {
         }
         else {
             restoPlace.push(i);
+            document.getElementById("options").innerHTML += "<h4 class='p-1 d-inline-block'>" + i +"</h4>" +"<br>";
         }
     } while(1);
     var l;
@@ -32,7 +33,15 @@ function addResto () {
 function randomResto (){
     var randomNumResto = restoPlace[Math.floor(Math.random ()* restoPlace.length)];
     if (restoPlace[0] === null || restoPlace[0] === undefined){
+      document.getElementById("result").innerHTML = "No options listed";
       window.alert ("List Places");
+    }else {
+      document.getElementById("result").innerHTML = randomNumResto;
     }
-    document.getElementById("result").innerHTML = randomNumResto;
+}
+
+
+function removeAllOptions(){
+  document.getElementById("options").innerHTML =null;
+  restoPlace = [];
 }
