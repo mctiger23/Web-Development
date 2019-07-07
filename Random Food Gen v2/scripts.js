@@ -28,6 +28,10 @@ function addResto () {
     }
     document.getElementById("list").innerHTML= text;
 }
+
+
+
+
 // Generate and select a random resto//
 
 function randomResto (){
@@ -40,6 +44,21 @@ function randomResto (){
     }
 }
 
+
+function addResto2(){
+  var e = document.getElementById("addOption").value;
+    restoPlace.push(e);
+    document.getElementById("options").innerHTML += "<h4 class='p-1 d-inline-block'>" + e +"</h4>" +"<br>";
+    document.getElementById("addOption").value = "";
+}
+
+//press enter key on the search box NOT WORKING//
+
+input.addEventListener('keyup', function(e){
+  if (e.keyCode === 13){
+    addResto2();
+  }
+});
 
 function removeAllOptions(){
   document.getElementById("options").innerHTML =null;

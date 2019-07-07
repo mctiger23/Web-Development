@@ -4,32 +4,40 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Random Food Generator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="food_gen_theme.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="scripts.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Random Food Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="food_gen_theme.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="scripts.js"></script>
 </head>
+
 <body>
   <div class="main my-0">
     <div class="container-fluid pb-2">
       <div class="container-fluid">
-        <header><p><h1>Where Should We Eat?</h1></p> <br></header>
-        <h2 class="py-3"><strong><p id="result"></p></strong></h2>
+        <header>
+          <p>
+            <h1>Where Should We Eat?</h1>
+          </p> <br>
+        </header>
+        <h2 class="py-3"><strong>
+            <p id="result"></p>
+          </strong></h2>
       </div>
       <div class="container-fluid m-5">
         <div class="row justify-content-center">
           <div class="col-12 py-3 w-400 mx-auto">
-            <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="addResto()" >Add a Place to eat!</button>
+            <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="addResto()">Add a Place to eat!</button>
           </div>
           <div class="col-12 py-3 w-400 mx-auto">
             <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="randomResto()">Click Me to find out Where to Eat!</button>
           </div>
           <div class="col-12 py-3 w-400 mx-auto">
-            <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="removeAllOptions()" >Remove ALL options</button>
+            <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="removeAllOptions()">Remove ALL options</button>
           </div>
         </div>
         <br>
@@ -37,20 +45,27 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
         <div class="container-fluid">
           <div class="row py-3">
             <div class="col-6 d-flex justify-content-center">
-              <div class = "w-50 border-thick pt-2">
+              <div class="w-50 border-thick pt-2">
                 <p id="options" class="text-left"></p>
+                <div class="container-fluid" ">
+                  <label for="add"><strong>Add a Places to Eat!</strong></label><br>
+                  <input type="text" name="add" id="addOption">
+                  <button class="btn btn-md btn-dark mb-1" type="button" onclick="addResto2()"><i class="far fa-plus-square"></i></button>
+                </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col">
-          Created by Miguel Castro
-        </div>
       </div>
-    </footer>
-</div>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col">
+            Created by Miguel Castro
+          </div>
+        </div>
+      </footer>
+    </div>
 </body>
+
 </html>
