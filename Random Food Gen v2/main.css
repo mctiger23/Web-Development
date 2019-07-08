@@ -28,7 +28,10 @@ footer{
   min-height: 100vh;
 }
 
-
+#result {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 @media (max-width: 800px){
   h4, h2 {

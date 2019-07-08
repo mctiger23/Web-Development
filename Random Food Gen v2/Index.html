@@ -12,7 +12,7 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="food_gen_theme.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <script src="scripts.js"></script>
+
 </head>
 
 <body>
@@ -30,9 +30,9 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
       </div>
       <div class="container-fluid m-5">
         <div class="row justify-content-center">
-          <div class="col-12 py-3 w-400 mx-auto">
+          <!-- <div class="col-12 py-3 w-400 mx-auto">
             <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="addResto()">Add a Place to eat!</button>
-          </div>
+          </div> -->
           <div class="col-12 py-3 w-400 mx-auto">
             <button class="btn-block btn-lg bg-dark text-light border-light border-thick text-wrap" type="button" onclick="randomResto()">Click Me to find out Where to Eat!</button>
           </div>
@@ -47,10 +47,9 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
             <div class="col-6 d-flex justify-content-center">
               <div class="w-50 border-thick pt-2">
                 <p id="options" class="text-left"></p>
-                <div class="container-fluid" ">
-                  <label for="add"><strong>Add a Places to Eat!</strong></label><br>
-                  <input type="text" name="add" id="addOption">
-                  <button class="btn btn-md btn-dark mb-1" type="button" onclick="addResto2()"><i class="far fa-plus-square"></i></button>
+                <div class="container-fluid mb-2" >
+                  <input type="text" id="addOption" placeholder="Add a Place to Eat" autofocus>
+                  <button class="btn btn-md btn-dark mb-1 far fa-plus-square" id="addBtn" type="button" onclick="addResto2()"></button>
                 </div>
                 </div>
               </div>
@@ -66,6 +65,7 @@ Randomly pick a restaurant from a list. User can add additional restaurants if n
         </div>
       </footer>
     </div>
+<script src="scripts.js"></script>
 </body>
 
 </html>
