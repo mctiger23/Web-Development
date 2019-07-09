@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,40 +13,45 @@
     <title>Dicee Game</title>
   </head>
   <body>
-    <div class="container-fluid text-center text-light">
-      <header class="py-3">
-        <h1>Welcome to my Dice Game</h1>
-        <p class="lead">Let's get the Dice rolling!</p>
-      </header>
+    <div class="container-fluid">
+      <div class="container-fluid text-center text-light">
+        <header class="py-3">
+          <h1>Welcome to my Dice Game</h1>
+          <p class="lead">Let's get the Dices rolling!</p>
+        </header>
+      </div>
+      <div class="container-fluid text-light">
+        <div class="continer-fluid">
+          <h1 class="font-weight-bolder py-5 text-center" id="notifyText">Good Luck!</h1>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button class="btn btn-lg btn-outline-light" type="button" name="button" onclick="main()"> Roll your luck!</button>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-6 d-flex justify-content-center">
+            <h3>Player 1</h3>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <h3>Player 2</h3>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-6 d-flex justify-content-center">
+            <img id = "diceP1" src="images/dice1.png" class="img-fluid" alt="Dice-1">
+          </div>
+          <div class="col d-flex justify-content-center">
+            <img id = "diceP2" src="images/dice2.png" class="img-fluid" alt="Dice-2">
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="container-fluid text-light">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <button class="btn btn-lg btn-outline-light" type="button" name="button"> Roll you luck!</button>
-        </div>
-      </div>
-      <div class="row pt-5">
-        <div class="col-6 d-flex justify-content-center">
-          <h3>Player 1</h3>
-        </div>
-        <div class="col-6 d-flex justify-content-center">
-          <h3>Player 2</h3>
-        </div>
-      </div>
-      <div class="row py-3">
-        <div class="col-6 d-flex justify-content-center">
-          <img id = "diceP2" src="images/dice1.png" class="img-fluid" alt="Dice-1">
-        </div>
-        <div class="col d-flex justify-content-center">
-          <img id = "diceP2" src="images/dice2.png" class="img-fluid" alt="Dice-1">
-        </div>
-
-
-      </div>
-
+    <div class="container-fluid d-flex justify-content-center">
+      <footer class="footer">
+        <a href="dicee.html" class="text-light font-weight-bold">Original Project</a>
+      </footer>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src= "index2.js"></script>
