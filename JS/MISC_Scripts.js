@@ -78,3 +78,60 @@ function guestValidation () {
 }
 
 guestValidation();
+
+// Calculator
+
+function add(num1,num2){
+  return num1 + num2;
+}
+
+function subtract(num1,num2){
+  return num1 - num2;
+}
+
+function multiply(num1,num2){
+  return num1 * num2;
+}
+
+
+function divide(num1,num2){
+  return num1 / num2;
+}
+
+function calculate (num1,num2,operator){
+  return operator(num1,num2);
+}
+
+
+//Callback Function
+//callback can be a function
+
+function anotherAddEventListener(typeOfEvent, callback){
+  // Detect Event Code ..
+
+  var eventThatHappened = {
+    eventType: "keypress",
+    key: "key",
+    durationOfKeyPress: 2
+  };
+  if (eventThatHappened === typeOfEvent){
+    callback(eventThatHappened);
+  }
+}
+
+//Example: anotherAddEventListener("keypress", fucntion(event){
+//   console.log(event);
+// });
+
+
+//Construction Function
+// function HouseKeeper (name, age, legal, yearOfExperience,previousWork){
+//     this.name = name;
+//     this.age = age;
+//     this.legal = legal;
+//     this.yearOfExperience = yearOfExperience;
+//     this.previousWork = previousWork;
+//     this.clean = function (){
+//         alert("On my way!");
+//     };
+// }
