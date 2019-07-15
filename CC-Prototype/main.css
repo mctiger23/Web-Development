@@ -1,0 +1,27 @@
+main {
+  float: right;
+}
+
+#sideNav {
+  float: left;
+  width: 200px;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+}
+.collapsing.width {
+
+  width: 0;
+  height: auto;
+}
+
+
+@media (max-width: 875px) {
+  #sideNav{
+    width: 0;
+  }
+}
