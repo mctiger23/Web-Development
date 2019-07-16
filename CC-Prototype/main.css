@@ -1,5 +1,6 @@
 main {
-  float: right;
+  overflow: auto;
+
 }
 
 #sideNav {
@@ -22,6 +23,10 @@ main {
 
 @media (max-width: 875px) {
   #sideNav{
+    width: 0;
+  }
+  #sideNavBtn{
+    visibility: hidden;
     width: 0;
   }
 }
