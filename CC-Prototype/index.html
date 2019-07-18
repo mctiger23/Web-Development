@@ -161,48 +161,70 @@
         <hr class="mt-2">
         <div class="container-fluid pt-2">
           <div class="row">
+            <!-- Attach Documents -->
             <div class="col-lg-4 my-3">
               <div class="card h-100">
                 <div class="card-header">
                   <h6>Attached Documents</h6>
                 </div>
                 <div class="card-body">
-                  Attached Documents and Photos here -- Hover:Small Description
+                  Attached Documents and Photos. Drag and Drop Files here -- Hover:Small Description
                 </div>
                 <div class="card-footer">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col float-left">
                       Add Documents
                     </div>
-                    <div class="col-6 d-flex justify-content-end my-0">
-                      <button id="addDoc" class="btn btn-sm btn-outline-primary" type="button" >+</button>
+                    <div class="d-flex justify-content-end my-0">
+                      <button type="file" accept="image/*, application/*,text/*,.pdf" multiple class="btn btn-sm btn-outline-primary">+</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- List of EDCs -->
             <div class="col-lg-4 my-3">
               <div class="card h-100">
                 <div class="card-header">
                   <h6>EDCs</h6>
                 </div>
                 <div class="card-body">
-                  <ul>
+                  <ul id ="edcList">
                     <li>EDC <strong>500815</strong></li>
                   </ul>
                 </div>
                 <div class="card-footer">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col float-left">
                       Add EDCs
                     </div>
-                    <div class="col-6 d-flex justify-content-end my-0">
-                      <button class="btn btn-sm btn-outline-primary" type="button" name="button">+</button>
+                    <div class="d-flex justify-content-end my-0">
+                      <button class="btn btn-sm btn-outline-primary" type="button" data-toggle = "modal" data-target="#addEDC">+</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- EDC Add Modal -->
+            <div class="modal fade" id="addEDC" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="addEDCLabel">
+              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header  my-0">
+                    <h5 class="modal-title" id="addEDCLabel">Enter EDC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mt-1">
+                    <form class="d-inline-flex" >
+                      <input type="text" id="edcNum"  >
+                      <button id="addEDCBtn" type="submit" class="btn btn-sm btn-primary ml-5">+</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Refernce REQs -->
             <div class="col-lg-4 my-3">
               <div class="card h-100">
                 <div class="card-header">
@@ -216,10 +238,10 @@
                 </div>
                 <div class="card-footer">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col float-left">
                       Add Refernce REQ#s
                     </div>
-                    <div class="col-6 d-flex justify-content-end my-0">
+                    <div class="d-flex justify-content-end my-0">
                       <button class="btn btn-sm btn-outline-primary" type="button" name="button">+</button>
                     </div>
                   </div>
