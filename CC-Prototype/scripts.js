@@ -7,6 +7,8 @@ var listEDCAdded = [500815];
 //   $("nav.sidebar").toggle();
 //   $("sidNavBtn").
 // });
+//addEventListeners
+
 
 //Side nav toggle options
 document.getElementById("sideNavBtn").addEventListener("click",function(){
@@ -27,9 +29,26 @@ document.getElementById("addEDCBtn").addEventListener("click",function(){
   if (edcAdded === "" || isNum){
     document.getElementById("edcNum").value = "";
     document.getElementById("edcNum").setAttribute("placeholder", "Enter EDC");
-  } else {
+  }
+  else {
     var node = document.createElement("LI");
     listEDCAdded.push(edcAdded);
     document.getElementById("edcList").innerHTML += "<li>EDC <strong>" + edcAdded +"</strong></li>";
     document.getElementById("edcNum").value = "";}
 });
+
+document.getElementById("edcNum").addEventListener("keypress",function(e){
+  if (e.keyCode === 13){
+    document.getElementById("addEDCBtn").click();
+  }
+});
+
+// NOT WORKING HEHEHE
+// function validateEdc(edc){
+//   for (i = 0; i<listEDCAdded.length; i++){
+//     if (listEDCAdded[i] === edc){
+//       alert("EDC already Added");
+//     }
+// }
+//
+// }
