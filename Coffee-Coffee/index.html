@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coffee-Coffee</title>
+  </head>
+  <body>
+    <h1>Lets make a Perfect Cup of Joe!</h1>
+    <div>
+      <form action="index.html" method="post">
+        <p>
+          <label  for="Cups of Coffee">Enter Number of Cups/Shots: </label>
+          <input id="cupsNum" type="number" name="Cups of Coffee" >
+        </p>
+        <p>
+          <label for="Brew Type">Select Brew Type: </label>
+          <select id="brewType" name="Brew Type">
+            <option value="French Press">French Press</option>
+            <option value="Drip">Drip</option>
+            <option value="Pour Over">Pour Over</option>
+            <option value="Espresso">Espresso</option>
+          </select>
+        </p>
+        <div>
+          <button type="button" onclick="submitCalc2()">Calculate</button>
+        </div>
+      </form>
+      <div >
+        <h3 id = "result"></h3>
+      </div>
+
+    </div>
+
+  <!--INSER JS SOURCE(s) below: -->
+  <script src="main.js"></script>
+  </body>
+</html>

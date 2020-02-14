@@ -1,0 +1,31 @@
+=============================================================================
+                      Coffee Measurement Application
+
+This application will allow users to measure the *perfect* amount of water
+to bean ratio based on the brew type (Drip, Pour Over, French Press, espresso shot)
+
+Application Goals:
+
+1. Get user input
+  - Brew Type: (Drop Down select)
+  - Number of Cups: (Numbers: int)
+2. Put each user input into a variable
+  - var BrewType
+  - var cupsNum
+3. Based on the users input, the Calculation will be determined
+  -Nested(case or switch statement)?Or Separated?
+4. Calculation
+  -For Drip, Pour Over and French Press Brews
+    -Water in cups:Beans in Tbps = 1:2 or 6 ounces:10.6 grams
+  -For Espresso shot
+    -1 ounces: 7 grams
+
+
+Steps
+
+- User input number of cups and Brew Type they would like to make
+- Brew type will be input into a function
+
+
+
+=============================================================================
