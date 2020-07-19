@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //connect to mongoDB
-mongoose.connect('mongodb+srv://Admin-User:Tigers23@db-test-env-free-bmcdu.mongodb.net/userDB?retryWrites=true&w=majority',{useNewUrlParse: true});
+mongoose.connect(MONGODB,{useNewUrlParse: true});
 
 //create schema
 const userSchema = new mongoose.Schema({
