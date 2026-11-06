@@ -1,0 +1,65 @@
+# Publishes this repo to GitHub Pages:
+#   https://<user>.github.io/<repo>/             -> the portfolio and projects, as they are
+#   https://<user>.github.io/<repo>/golf-deals/  -> the Next.js golf deals site (built here)
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: golf-deals/package-lock.json
+
+      - name: Build golf deals site
+        working-directory: golf-deals
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}/golf-deals
+          # Add these as repository secrets to switch from demo mode to a real Supabase project.
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          npm ci
+          npm run build
+
+      - name: Assemble site
+        run: |
+          mkdir _site
+          git archive HEAD | tar -x -C _site
+          rm -rf _site/golf-deals _site/.github
+          cp -r golf-deals/out _site/golf-deals
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
